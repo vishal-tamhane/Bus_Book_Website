@@ -1,0 +1,30 @@
+<%- include("./partials/header.ejs") %>
+
+<form class="bookt-container">
+    <h1 class="h3 mb-3 fw-normal display-4 text-center pt-5">Book Ticket</h1>
+    <div class="bookt1">
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="email" class="form-control blur-input" id="exampleInputEmail1" aria-describedby="emailHelp">
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Password</label>
+            <input type="password" class="form-control blur-input" id="exampleInputPassword1">
+        </div>
+        <div class="mb-3">
+            <label for="pickupLocation" class="form-label">PickUp Location</label>
+            <input type="text" class="form-control blur-input" id="Plocation">
+        </div>
+        <div class="mb-3">
+            <label for="finalLocation" class="form-label">Final Location</label>
+            <input type="text" class="form-control blur-input" id="Flocation">
+        </div>
+        <div class="mb-3">
+            <label for="price" class="form-label">Price</label>
+            <input type="text" class="form-control blur-input" id="price">
+        </div>
+        <button type="submit" class="btn btn-success">Submit</button>
+    </div>
+</form>
+
+<%- include("./partials/footer.ejs") %>

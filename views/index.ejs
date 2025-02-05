@@ -1,0 +1,124 @@
+<%- include("./partials/header.ejs") %>
+
+<!-- Search  -->
+<h1 class="h3 mb-3 fw-normal text-center pt-5">Search Routes</h1>
+<form class="search-containers">
+  <div class="form-floating form-container">
+    <input type="email" class="form-control" id="floatingInput" placeholder="From">
+    <label for="floatingInput">From</label>
+  </div>
+  <div class="form-floating form-container">
+    <input type="password" class="form-control" id="floatingPassword" placeholder="To">
+    <label for="floatingPassword">TO</label>
+  </div>
+  <div class="form-floating form-container">
+    <input type="date" class="form-control" id="floatingInput" placeholder="Date">
+    <label for="floatingInput">Date</label>
+  </div>
+  <button class="btn btn-primary w-auto py-2" type="submit">Search</button>
+</form>
+
+<!-- Home page -->
+<div class="px-4 pt-5 my-5 text-center border-bottom home-container">
+  <h1 class="display-4 fw-bold text-body-emphasis">Forever Travellers</h1>
+  <div class="col-lg-6 mx-auto">
+    <p class="lead mb-4">We provide the best travelling experience for long routes as well as short routes, and a comfortable journey with all security at a low price.</p>
+    <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+      <button type="button" class="btn btn-danger btn-lg px-4 me-sm-3">About</button>
+      <button type="button" class="btn btn-outline-info btn-lg px-4">Rating</button>
+    </div>
+  </div>
+  <div class="overflow-hidden" style="max-height: 50vh;">
+    <div class="container px-5">
+      <img src="/uploads/image1.jpg" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" width="700" height="100" loading="lazy">
+    </div>
+  </div>
+</div>
+
+<!-- Bus updates -->
+<h1 class="text-center">Bus details</h1>
+<div class="album py-5 bg-body-tertiary">
+  <div class="container">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+      <div class="col">
+        <div class="card shadow-sm">
+          <img src="/uploads/image2.jpg" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" width="700" height="100" loading="lazy">
+          <div class="card-body">
+            <p class="card-text">From Pune To Hyderabad.</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <a href="/bookt"><button type="button" class="btn btn-sm btn-outline-secondary">Book Bus</button></a>
+              </div>
+              <button type="button" class="btn btn-sm btn-outline-secondary">Check Availability</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card shadow-sm">
+          <img src="/uploads/image3.jpg" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" width="700" height="100" loading="lazy">
+          <div class="card-body">
+            <p class="card-text">Bus from Pune to Mumbai</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <a href="/bookt"><button type="button" class="btn btn-sm btn-outline-secondary">Book Bus</button></a>
+              </div>
+              <button type="button" class="btn btn-sm btn-outline-secondary">Check Availability</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card shadow-sm">
+          <img src="/uploads/image4.jpg" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" width="700" height="100" loading="lazy">
+          <div class="card-body">
+            <p class="card-text">Bus From Hyderabad To Mumbai</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <a href="/bookt"><button type="button" class="btn btn-sm btn-outline-secondary">Book Bus</button></a>
+              </div>
+              <button type="button" class="btn btn-sm btn-outline-secondary">Check Availability</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Popular Routes -->
+<h1 class="text-center">Popular Routes</h1>
+<div id="accordion">
+  <div class="card">
+    <div class="card-header" id="headingOne">
+      <h3 class="text-center">Popular Bus Routes</h3>
+    </div>
+    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+      <div class="card-body">
+        Delhi To Manali | Bus, Delhi To Rishikesh Bus, Delhi To Shimla Bus, Delhi To Nainital Bus, Delhi To Katra Bus, Bangalore To Goa Bus, Bangalore To Hyderabad Bus, Bangalore To Tirupathi Bus, Bangalore To Chennai Bus, Bangalore To Pondicherry Bus, Hyderabad To Bangalore Bus, Hyderabad To Goa Bus, Hyderabad To Srisailam Bus, Hyderabad To Vijayawada Bus, Hyderabad To Tirupathi Bus, Pune To Goa Bus, Pune To Mumbai Bus, Pune To Nagpur
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingTwo">
+      <h3 class="text-center">Popular Cities</h3>
+    </div>
+    <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordion">
+      <div class="card-body">
+        Hyderabad Bus, Bangalore Bus, Chennai Bus, Pune Bus, Delhi Bus, Mumbai Bus, Kolkata Bus, Ernakulam Bus, Ahmedabad Bus, Vijayawada Bus, Jaipur Bus, Indore Bus, Lucknow Bus, Bhopal Bus, Goa Bus, Ayodhya
+      </div>
+    </div>
+  </div>
+  <div class="card card-p">
+    <div class="card-header" id="headingThree">
+      <h3 class="text-center">Popular Bus Operators</h3>
+    </div>
+    <div id="collapseThree" class="collapse show" aria-labelledby="headingThree" data-parent="#accordion">
+      <div class="card-body">
+        No 1 Air Travels, YBM Travels, Sri SMS Travels, Svkdt Travels, RKT Tours and Travels, Royal Cars, Rahul Travels, JBT Travels, Raj Express, Vaishali Express, Rahul Travels Indore, Delhi Tours And Travels, Ashok Travels, Greenline Travels, Pawan Travels, Ravi Travels, VRL Travels, Dolphin Travels, Ganesh Travels, Kaveri Travels, National Travels, Bharathi Travels, City Land Travels, K Kaveri Travels, KK Travels, Mahadev Travels, Maharaja Travels, M R Travels, New Payal Travels, Paras Travels, Shree Parshwanath Travels, Payal Travels, R K Travels, Shivam Travels, Shree Mahaveer Travels, SRS Travels, Tulsi Travels, Vaibhav Travels, Vikas Travels, Amarnath Travels, Anand Travels, Ashapura Travels, Ashok Bus Service, Ashoka Travels, Chartered Bus, Neugo, Intrcity Smart Bus, Uttar Pradesh State Road Transport Corporation (UPSRTC), HRTC Bus, South Bengal State Road Transport Corporation (SBSTC), NBSTC
+      </div>
+    </div>
+  </div>
+</div>
+
+<%- include("./partials/footer.ejs") %>
